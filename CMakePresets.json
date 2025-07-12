@@ -1,0 +1,26 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "clang-vulkan",
+            "displayName": "Clang 19.1.6 x86_64-pc-windows-msvc",
+            "description": "Using compilers: C = D:\\Applications\\Scoop\\apps\\llvm\\current\\bin\\clang.exe, CXX = D:\\Applications\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "D:/Applications/Scoop/apps/llvm/current/bin/clang.exe",
+                "CMAKE_CXX_COMPILER": "D:/Applications/Scoop/apps/llvm/current/bin/clang++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "clang-vulkan-build",
+            "configurePreset": "clang-vulkan",
+            "description": "Build using clang-vulkan preset",
+            "jobs": 4
+        }
+    ]
+}

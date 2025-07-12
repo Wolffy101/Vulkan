@@ -1,0 +1,61 @@
+# 构建输出目录
+/build/
+/out/
+/bin/
+/lib/
+
+# CMake 生成文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# Ninja 构建文件
+*.ninja
+.ninja_deps
+.ninja_log
+
+# VS Code 配置文件（可根据需要选择忽略）
+.vscode/
+.vscode-test/
+
+# vcpkg 安装目录（如果在项目中）
+vcpkg_installed/
+vcpkg_buildtrees/
+vcpkg_packages/
+
+# Vulkan SDK 日志和缓存（如果有）
+*.log
+*.cache
+*.pdb
+*.ilk
+
+# IDE 和系统文件
+*.sdf
+*.suo
+*.VC.db
+*.VC.opendb
+*.DS_Store
+Thumbs.db
+
+# 通用临时文件
+*.obj
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+*.bak
+*.tmp
+*.user
+*.swp
+
+# 日志和测试输出
+*.log
+Testing/
+CTestTestfile.cmake
+
+# Preset 构建临时文件（如果使用外部缓存）
+CMakePresets.json.user
