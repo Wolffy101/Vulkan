@@ -15,7 +15,6 @@ find_package(Vulkan REQUIRED)
 if(MSVC)
     add_compile_options(/utf-8)
 endif()
-message(STATUS "Vulkan path: ${VULKAN_SDK}")
 
 # 添加源文件
 file(GLOB_RECURSE SRC_FILES src/*.cpp)
